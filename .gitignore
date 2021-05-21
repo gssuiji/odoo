@@ -1,0 +1,5 @@
+.git
+.idea
+_pycache__
+venv
+odoo-14.0.post20210228

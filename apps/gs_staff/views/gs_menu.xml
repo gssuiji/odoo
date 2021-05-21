@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Library App Menu -->
+    <menuitem id="menu_gs" name="gs"/>
+    <!-- Action to open the Staff list -->
+    <act_window id="action_gs_staff"
+        name="Gs Staff"
+        res_model="gs.staff"
+        view_mode="tree,form,search"
+    /> <!-- kanban,tree,form,activity,calendar,graph,pivot -->
+    <!-- Menu item to open the Staff list -->
+    <menuitem id="menu_gs_staff"
+        name="Staff"
+        parent="menu_gs"
+        action="action_gs_staff"
+    />
+</odoo>

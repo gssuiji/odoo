@@ -1,0 +1,28 @@
+<odoo>
+    <record id="view_tree_clock" model="ir.ui.view">
+        <field name="name">Clock Tree</field>
+        <field name="model">gs.clock</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="staff_id"/>
+                <field name="clock_in"/>
+                <field name="clock_out"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_form_clock" model="ir.ui.view">
+        <field name="name">Clock Form</field>
+        <field name="model">gs.clock</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="staff_id"/>
+                        <button name="button_up" type="object" string="上班打卡"/>
+                        <button name="button_out" type="object" string="下班打卡"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

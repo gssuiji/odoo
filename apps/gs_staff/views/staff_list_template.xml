@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <template id="staff_list_template" name="Staff List">
+            <div id="wrap" class="container">
+                <h1>Staff</h1>
+                <t t-foreach="staffs" t-as="staff">
+                    <div class="row">
+                        <span t-field="staff.name"/>
+                        <span t-field="staff.sex"/>
+                        <span t-field="staff.date_onboarding"/>
+                    </div>
+                </t>
+            </div>
+        </template>
+    </data>
+</odoo>
